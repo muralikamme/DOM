@@ -1,0 +1,17 @@
+  let table=document.createElement("table");
+        let tr=document.createElement("tr");
+        let td1=document.createElement("td");
+        let td2=document.createElement("td");
+        let td3=document.createElement("td");
+        let td4=document.createElement("td");
+        let td5=document.createElement("td");
+    td1.innerText=obj[items].id;
+    td2.innerText=items.title;
+    td3.innerText=items.price;
+    td4.innerText=items.description;
+    td5.innerText=items.category;
+    tr.append(td1.td2,td3,td4,td5);
+    table.appendChild(tr)
+    document.body.append(table)
+    document.write(body)
+    

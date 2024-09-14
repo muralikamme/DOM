@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(166, 142, 109);
+
+      }
+
+
+       span{
+            display: inline-block;
+            
+
+        }
+       fieldset {
+       
+        height: 100px;
+
+        }
+        legend{
+            text-align: center;
+
+        }
+        .tech>span{
+            font-size: 30px;
+           
+        }
+       .tech2>p {
+        
+        font-size: 30px;
+
+        }
+        .declaration>div{
+            font-size: 30px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+  <script>
+
+  ////////////////////// //Creating  a DivTag  for Personal Details, Div Start/////////////////////////////////
+   const div1=document.createElement("div");
+    const Name=document.createElement("h1");
+    Name.innerHTML=`<i>Murali Kamme</i>`
+    const span1=document.createElement("span");
+    span1.innerHTML=`<strong>Phone No:</strong>   9392356244`;
+    const span2=document.createElement("span");
+    span2.innerHTML=` <strong>Email Id</strong>:muralikamme@gmail.com`;
+     const br=document.createElement("br")    
+      ////////////////////////////////// div End////////////////////////////////////////////
+   const fieldset=document.createElement("fieldset"); 
+   const Legend=document.createElement("legend");
+   Legend.innerHTML=`<strong>OBJECTIVE</strong>`;
+   const para=document.createElement("p")
+   para.innerText="To secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company."
+  ///////////////// //Fieldset End////////////////////////////////////
+
+   const unorderdlist=document.createElement("ul");// Creating unOrdered list for Skills//
+   unorderdlist.setAttribute("class","tech")
+   unorderdlist.innerHTML=`<span><strong>Technical Skills</strong></span>`
+   const list1=document.createElement("li");
+   const list2=document.createElement("li");
+   const list3=document.createElement("li");
+   const list4=document.createElement("li");
+   const list5=document.createElement("li");
+   const list6=document.createElement("ui");
+   const list7=document.createElement("li")
+   //INSIDE  LIST DATA ////
+     list1.innerText="HTML";
+    list2.innerText="CSS"
+    list3.innerText="BootStrap";
+    list4.innerText="JavaScript"
+    list5.innerText="Basics Of Python"
+    list6.innerHTML=`<strong>Developer Tools<strong>`;
+    list7.innerText="Git&Github"
+
+
+
+    ///ANOTHER UNODERED LIST FOR Interpersonal Skils//
+    const inter=document.createElement("ul");
+    
+    inter.innerHTML=`<p><strong>Interpersonal Skills</strong></p>`
+    inter.setAttribute("class","tech2")
+    const uldata1=document.createElement("li")
+    const uldata2=document.createElement("li")
+    const uldata3=document.createElement("li")
+    const uldata4=document.createElement("li")
+
+   //////////////// INTERPERSONAL SKILL DATA////////////////////////////
+    uldata1.innerText="High level of Adaptability";
+    uldata2.innerText="Good  Team Player";
+    uldata3.innerText="Active Listening";
+    
+
+    const discript=document.createElement("div");
+    discript.setAttribute("class","declaration")
+    discript.innerHTML=`<div><strong>DECLARATION<strong></div>`
+    const pg=document.createElement("p")
+    pg.innerText="I,here by, declare that the details mentioned above are the truth and facts as per my knowledge,I hold the responsibility for the correctness of the particulars mentioned above."
+
+
+
+
+    
+   
+
+
+    
+    div1.append(Name,span1,span2);
+    fieldset.append(Legend,para)
+    unorderdlist.append(list1,list2,list3,list4,list5,list6,list7)
+    inter.append(uldata1,uldata2,uldata3)
+    discript.appendChild(pg)
+    
+
+    document.body.append(div1,fieldset,unorderdlist,inter,discript) ;
+
+ 
+  </script>
+</body>
+</html>
